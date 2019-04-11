@@ -26,7 +26,6 @@ export default {
 <style scoped>
 
 #post {
-  padding: 30px;
   font-size: 17px;
   font-family: 'Raleway';
   font-weight: 700;
@@ -37,13 +36,14 @@ export default {
 }
 
 #text-container {
-  width: 50%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
 
 #post-text {
   word-wrap: break-word;
+  padding: 30px;
 }
 
 #post-info {
@@ -67,6 +67,15 @@ export default {
     to {
         opacity: 1;
     }
+}
+
+@media only screen and (max-width: 768px){
+  #post {
+    font-size: 14px;
+  }
+  #post-info {
+    font-size: 10px;
+  }
 }
 
 

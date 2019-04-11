@@ -153,4 +153,19 @@ export default {
   margin-bottom: 4%;
   border-bottom: none;
 }
+
+@media only screen and (max-width: 768px){
+  #input-text {
+    width: 55%;
+  }
+
+  #postBtn {
+    font-size: 19px;
+    padding: 1px 3px 3px 3px;
+  }
+
+  #posts {
+    max-width: 70%;
+  }
+}
 </style>
