@@ -155,6 +155,15 @@ export default {
 }
 
 @media only screen and (max-width: 768px){
+
+  #headTitle {
+    font-size: 27px;
+  }
+
+  #navRight div {
+    font-size: 16px;
+  }
+
   #input-text {
     width: 55%;
   }

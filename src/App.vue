@@ -19,8 +19,6 @@ export default {
 
 <style>
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
   background-image: -webkit-linear-gradient(left, #dddddd, #b4b4b4); /* For Chrome and Safari */
   background-image: -moz-linear-gradient(left, #dddddd, #b4b4b4); /* For old Fx (3.6 to 15) */
@@ -38,7 +36,6 @@ body {
 
 .component {
   margin: 0 auto;
-  height: 100%;
 }
 
 </style>
