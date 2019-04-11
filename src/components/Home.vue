@@ -30,7 +30,7 @@
 
 <script>
 import firebase from 'firebase'
-import router from '../main'
+import {router, currentUsername} from '../main'
 import post from './Post'
 import { userPosts, ref } from '../database/post'
 
@@ -40,11 +40,10 @@ export default {
     return {
       userPosts: userPosts,
       newPost: {
-        username: firebase.auth().currentUser.displayName,
+        username: currentUsername,
         text: null,
         date: new Date().toISOString().slice(0,10),
       },
-      user: firebase.auth().currentUser,
     }
   },
   methods: {
@@ -54,7 +53,7 @@ export default {
           this.userPosts.length = 0;      
           ref.push(this.newPost);
           console.log("Infos has been added to DB.")
-          this.newPost.text = "";
+          this.newPost.text = null;
 
         }
     },
