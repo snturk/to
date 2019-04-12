@@ -30,7 +30,7 @@
 
 <script>
 import firebase from 'firebase'
-import {router, currentUsername} from '../main'
+import {router} from '../main'
 import post from './Post'
 import { userPosts, ref } from '../database/post'
 
@@ -40,7 +40,7 @@ export default {
     return {
       userPosts: userPosts,
       newPost: {
-        username: currentUsername,
+        username: firebase.auth().currentUser.displayName,
         text: null,
         date: new Date().toISOString().slice(0,10),
       },

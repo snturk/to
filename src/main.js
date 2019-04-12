@@ -44,13 +44,10 @@ var config = {
 };
 firebase.initializeApp(config);
 
-export var currentUsername;
-
 firebase.auth().onAuthStateChanged(function(user) {
 
   if (user) {
     router.replace('home');
-    this.currentUsername = user.displayName;
   }else {
     firebase.auth().signOut();
     router.replace('login');
