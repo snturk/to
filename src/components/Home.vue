@@ -30,7 +30,7 @@
 
 <script>
 import firebase from 'firebase'
-import {router} from '../main'
+import router from '../main'
 import post from './Post'
 import { userPosts, ref } from '../database/post'
 

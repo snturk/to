@@ -12,7 +12,7 @@
 
 <script>
 import firebase from 'firebase'
-import { router, setUsername } from '../main'
+import router from '../main'
 import { database, ref } from '../database/post'
 
 export default {
@@ -28,8 +28,8 @@ export default {
     createUser: function(){
       firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
         (user) => {
-          setUsername(this.username);
-          this.$router.replace('home');
+          this.setUsername(this.username);
+          this.signIn(this.email, this.password);
         },
 
         (err) => {
@@ -38,7 +38,27 @@ export default {
         
       );
 
-      
+    },
+    setUsername(username) {
+      firebase.auth().currentUser.updateProfile({
+          displayName: username,
+        }).then(function() {
+          console.log('Success');
+        }).catch(function(error) {
+          console.log(error.message);
+        });
+    },
+    signIn(email, password){
+      firebase.auth().signInWithEmailAndPassword(email, password).then(
+        (user) => {
+          this.$router.replace('home');
+          console.log('signedIn: ' + user.displayName);
+        },
+
+        (err) => {
+        alert('Error ' + err.message);
+        }
+      );
     }
   },
 }

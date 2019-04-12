@@ -47,7 +47,11 @@ firebase.initializeApp(config);
 firebase.auth().onAuthStateChanged(function(user) {
 
   if (user) {
-    router.replace('home');
+    if(user.displayName != null) {
+      router.replace('home');
+    }else {
+      router.replace('login');
+    }
   }else {
     firebase.auth().signOut();
     router.replace('login');
@@ -58,13 +62,4 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-export function setUsername(username) {
-  firebase.auth().currentUser.updateProfile({
-       displayName: username,
-     }).then(function() {
-       console.log('Success');
-     }).catch(function(error) {
-       console.log(error.message);
-     });
-}
 

@@ -8,7 +8,7 @@
       
       <input type="text" name="email" id="input-email" v-model="email" placeholder="email"><br>
       <input type="password" name="password" id="input-password" v-model="password" placeholder="password">
-      <div id="login" @click="signIn" :class="{readyToLogin: email && password}">log in</div>
+      <div id="login" @click="signIn(email, password)" :class="{readyToLogin: email && password}">log in</div>
       <router-link to="/create" id="linkCreate">create an account</router-link>
     </div>
   </div>
@@ -30,10 +30,11 @@ export default {
   },
   methods: {
     
-    signIn: function(){
-      firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
+    signIn(email, password){
+      firebase.auth().signInWithEmailAndPassword(email, password).then(
         (user) => {
           this.$router.replace('home');
+          console.log('signedIn: ' + user.displayName);
         },
 
         (err) => {
