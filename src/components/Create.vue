@@ -76,6 +76,7 @@ export default {
 </script>
 
 <style scoped>
+
 #createWrapper {
   margin-top: 15%;
 }

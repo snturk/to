@@ -5,7 +5,7 @@
       <div id="navContainer">
         <div id="headTitle" align="left">TO</div>
         <div id="navRight">
-          <div id="account">account</div>
+          <div id="account"> <router-link to="user"> {{username}} </router-link> </div>
           <div id="logout" @click="signOut">log out</div>
         </div>
       </div>
@@ -38,12 +38,13 @@ export default {
   name: 'Home',
   data () {
     return {
-      userPosts: userPosts,
+      userPosts,
       newPost: {
         username: firebase.auth().currentUser.displayName,
         text: "",
         date: new Date().toISOString().slice(0,10),
       },
+      username: firebase.auth().currentUser.displayName,
     }
   },
   methods: {

@@ -8,6 +8,7 @@ Vue.use(VueRouter);
 import Home from './components/Home'
 import Login from './components/Login'
 import Create from './components/Create';
+import Account from './components/Account'
 
 export const router = new VueRouter({
 
@@ -17,6 +18,7 @@ export const router = new VueRouter({
     { component: Login, path:"*" },
     { component: Login, path: "/login" },
     { component: Create, path: "/create" },
+    { component: Account, path: "/user" },
     { 
       component: Home, 
       path: "/home",

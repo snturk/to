@@ -39,19 +39,19 @@ export default {
 }
 
 #text-container {
-  width: 100%;
+  width: 95%;
   height: auto;
   margin: 0 auto;
 }
 
 #post-text {
   word-wrap: break-word;
-  padding: 30px;
+  padding: 35px;
 }
 
 #post-info {
   margin-top: 2%;
-  color: #6e6e6e;
+  color: #575757;
   font-size: 13px;
   letter-spacing: 0.4px;
   font-family: 'Heebo';
@@ -60,7 +60,7 @@ export default {
   right:4px;
 }
 #post-info span {
-  color: #6e6e6e;
+  color: #575757;
 }
 
 @keyframes fadeIn {

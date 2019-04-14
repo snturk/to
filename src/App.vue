@@ -25,7 +25,6 @@ body {
   background-image: -ms-linear-gradient(left, #dddddd, #b4b4b4); /* For pre-releases of IE 10*/
   background-image: -o-linear-gradient(left, #dddddd, #b4b4b4); /* For old Opera (11.1 to 12.0) */
   background-image: linear-gradient(to right, #dddddd, #b4b4b4); /* Standard syntax; must be last */
-
 }
 
 #app {
@@ -36,6 +35,11 @@ body {
 
 .component {
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 </style>
