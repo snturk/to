@@ -29,10 +29,13 @@ export default {
   font-size: 17px;
   font-family: 'Raleway';
   font-weight: 700;
-  border-bottom: 0.3px solid rgb(255, 255, 255);
+  background-color: #c7c7c7;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgb(116, 116, 116);
   position: relative;
   animation: fadeIn 2s forwards;
   transition-duration: 400ms;
+  margin-top: 10px;
 }
 
 #text-container {
@@ -48,7 +51,7 @@ export default {
 
 #post-info {
   margin-top: 2%;
-  color: #cccccc;
+  color: #6e6e6e;
   font-size: 13px;
   letter-spacing: 0.4px;
   font-family: 'Heebo';
@@ -57,7 +60,7 @@ export default {
   right:4px;
 }
 #post-info span {
-  color: #cccccc;
+  color: #6e6e6e;
 }
 
 @keyframes fadeIn {

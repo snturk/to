@@ -41,21 +41,28 @@ export default {
       userPosts: userPosts,
       newPost: {
         username: firebase.auth().currentUser.displayName,
-        text: null,
+        text: "",
         date: new Date().toISOString().slice(0,10),
       },
     }
   },
   methods: {
     postDB() {
-        if (this.newPost.text != "") {
+      if (this.newPost.text.replace(/\s/g, '').length) {
+
+        if (this.newPost.text.length >= 1) {
           
           this.userPosts.length = 0;      
           ref.push(this.newPost);
           console.log("Infos has been added to DB.")
           this.newPost.text = null;
 
+        }else {
+          alert('Please write a text.');
         }
+      }else {
+        alert('The post only contains spaces, tabs or linebreaks');
+      }
     },
     signOut() {
       firebase.auth().signOut()
@@ -143,11 +150,9 @@ export default {
 #posts {
   margin: 0 auto;
   margin-top: 5%;
-  background-color: #8c8c8c;
-  max-width: 35%;
+  max-width: 50%;
   height: fit-content;
   border-radius: 4px;
-  box-shadow: 2px 2px 10px rgb(179, 179, 179);
 }
 #posts:last-child {
   margin-bottom: 4%;

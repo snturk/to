@@ -26,17 +26,28 @@ export default {
   },
   methods: {
     createUser: function(){
-      firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
-        (user) => {
-          this.setUsername(this.username);
-          this.signIn(this.email, this.password);
-        },
-
-        (err) => {
-        alert('Error ' + err.message);
-        }
+      if (this.username.replace(/\s/g, '').length) {
         
-      );
+          if(this.username.length >= 10){
+            alert('Username is too long');
+        }else if(this.username.length < 1){
+          alert('Please write a username');
+        }else {
+          firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(
+            (user) => {
+              this.setUsername(this.username);
+            this.signIn(this.email, this.password);
+          },
+
+          (err) => {
+            alert('Error ' + err.message);
+          }
+          
+          );
+        }
+      }else {
+        alert('The username only contains spaces tabs or linebreaks');
+      }
 
     },
     setUsername(username) {
