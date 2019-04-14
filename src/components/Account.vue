@@ -19,6 +19,7 @@
 
 <script>
 import firebase from 'firebase'
+import router from 'vue-router'
 import { userPosts } from '../database/post'
 import post from './Post'
 
