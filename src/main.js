@@ -14,12 +14,12 @@ export const router = new VueRouter({
 
   mode: "history",
   routes: [
-    { redirect: "/login", path: "/" },
-    { redirect: "/login", path: "*" },
+    { redirect: "/to/login", path: "/" },
+    { redirect: "/to/login", path: "*" },
     { component: Login, path:"*" },
-    { component: Login, path: "/login" },
-    { component: Create, path: "/create" },
-    { component: Account, path: "/account" },
+    { component: Login, path: "/to/login" },
+    { component: Create, path: "/to/create" },
+    { component: Account, path: "/to/account" },
     { 
       component: Home, 
       path: "/home",
