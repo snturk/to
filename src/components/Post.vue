@@ -4,7 +4,7 @@
       <div id="post-text"> {{text}} </div>
     </div>
     
-    <div id="post-info"> <span>{{username}}</span>, {{date}}</div>
+    <div id="post-info"> <span>{{username}}</span> {{date}}</div>
   </div>
 </template>
 
@@ -61,6 +61,7 @@ export default {
 }
 #post-info span {
   color: #575757;
+  margin-right: 5px;
 }
 
 @keyframes fadeIn {

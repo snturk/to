@@ -2,14 +2,15 @@
   <div class="component" id="account">
     <router-link id="goHome" to="home">home</router-link>
     <div id="username"> {{username}} </div>
-    <div id="postLength"> <span> {{currentUserPosts.length}} </span> posts </div>
+    <div class="userInfo"> <span> {{currentUserPosts.length}} </span> posts </div>
+    <div class="userInfo"> <span>0</span> readers </div>
+    <div class="userInfo"> <span>0</span> reading </div>
     <hr>
     <div id="postsContainer">
       <post
       class="post"
       v-for="currentUserPost in currentUserPosts" :key="currentUserPost.id"
       :text="currentUserPost.text"
-      :username="currentUserPost.username"
       :date="currentUserPost.date"
       >
       </post>
@@ -51,22 +52,42 @@ export default {
 <style scoped>
 
 .component {
-  margin-top: 5%;
+  margin-top: 15px;
+}
+
+#goHome {
+  cursor: pointer;
+  font-family: 'Lato';
+  font-size: 20px;
+  padding: 2px 6px 6px 6px;
+  margin-left: 2%;
+  width: fit-content;
+  border: 0.8px black solid;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgb(179, 179, 179);
+  display: block;
 }
 
 #username {
   font-size: 34px;
   font-family: 'Assistant';
   font-weight: 700;
-  margin-top: 5%;
+  margin-right: 10%;
+  display: inline-block;
 }
 
-#postLength {
+.userInfo {
   font-size: 18px;
-  font-family: 'Raleway'
+  font-family: 'Raleway';
+  display: inline-block;
+  margin-left: 5%;
 }
-#postLength span {
+.userInfo span {
+  font-size: 23px;
   font-weight: bold;
+  font-family: 'Assistant';
+  letter-spacing: 1px;
+  
 }
 
 hr {
@@ -74,24 +95,33 @@ hr {
   color: black;
   background-color: black;
   border: none;
-  margin-bottom: 4%;
-  margin-top: 4%;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
-#goHome {
-  cursor: pointer;
-  font-family: 'Lato';
-  font-size: 23px;
-  padding: 2px 6px 6px 6px;
-  width: fit-content;
-  border-radius: 4px;
-  border: 0.8px black solid;
-  box-shadow: 2px 2px 10px rgb(179, 179, 179);
-}
 
 #postsContainer {
   max-width: 60%;
   margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 768px){
+
+  #username {
+    font-size: 24px;
+    margin-right: 1%;
+    margin-left: -2%;
+  }
+
+  .userInfo {
+    font-size: 15px;
+    margin-left: 1%;
+  }
+
+  .userInfo span{
+    font-size: 19px;
+  }
 }
 
 </style>
