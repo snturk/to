@@ -66272,7 +66272,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Account_vue__ = __webpack_require__(75);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a8991302_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Account_vue__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1416af9f_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Account_vue__ = __webpack_require__(178);
 function injectStyle (ssrContext) {
   __webpack_require__(176)
 }
@@ -66287,12 +66287,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-a8991302"
+var __vue_scopeId__ = "data-v-1416af9f"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Account_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a8991302_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Account_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1416af9f_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Account_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -66313,7 +66313,7 @@ var content = __webpack_require__(177);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(15)("20897d48", content, true, {});
+var update = __webpack_require__(15)("28c5c95b", content, true, {});
 
 /***/ }),
 /* 177 */
@@ -66324,7 +66324,7 @@ exports = module.exports = __webpack_require__(14)(false);
 
 
 // module
-exports.push([module.i, ".component[data-v-a8991302]{margin-top:15px}#goHome[data-v-a8991302]{cursor:pointer;font-family:Lato;font-size:20px;padding:2px 6px 6px;margin-left:2%;width:fit-content;border:.8px solid #000;border-radius:4px;box-shadow:2px 2px 10px #b3b3b3;display:block}#username[data-v-a8991302]{font-size:34px;font-family:Assistant;font-weight:700;margin-right:10%;display:inline-block}.userInfo[data-v-a8991302]{font-size:18px;font-family:Raleway;display:inline-block;margin-left:5%}.userInfo span[data-v-a8991302]{font-size:23px;font-weight:700;font-family:Assistant;letter-spacing:1px}hr[data-v-a8991302]{height:1.4px;color:#000;background-color:#000;border:none;margin-bottom:2%;margin-top:2%}#postsContainer[data-v-a8991302]{max-width:60%;margin:0 auto;margin-bottom:2%}@media only screen and (max-width:768px){#username[data-v-a8991302]{font-size:24px;margin-right:1%;margin-left:-2%}.userInfo[data-v-a8991302]{font-size:15px;margin-left:1%}.userInfo span[data-v-a8991302]{font-size:19px}}", ""]);
+exports.push([module.i, ".component[data-v-1416af9f]{margin-top:15px}#goHome[data-v-1416af9f]{cursor:pointer;font-family:Lato;font-size:20px;padding:2px 6px 6px;margin-left:2%;width:fit-content;border:.8px solid #000;border-radius:4px;box-shadow:2px 2px 10px #b3b3b3;display:block}#username[data-v-1416af9f]{font-size:34px;font-family:Assistant;font-weight:700;margin-right:10%;display:inline-block}.userInfo[data-v-1416af9f]{font-size:18px;font-family:Raleway;display:inline-block;margin-left:5%}.userInfo span[data-v-1416af9f]{font-size:23px;font-weight:700;font-family:Assistant;letter-spacing:1px}hr[data-v-1416af9f]{height:1.4px;color:#000;background-color:#000;border:none;margin-bottom:2%;margin-top:2%}#postsContainer[data-v-1416af9f]{max-width:60%;margin:0 auto;margin-bottom:2%}@media only screen and (max-width:768px){#username[data-v-1416af9f]{font-size:24px;margin-right:1%;margin-left:-2%}.userInfo[data-v-1416af9f]{font-size:15px;margin-left:1%}.userInfo span[data-v-1416af9f]{font-size:19px}}", ""]);
 
 // exports
 
@@ -66335,7 +66335,7 @@ exports.push([module.i, ".component[data-v-a8991302]{margin-top:15px}#goHome[dat
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"component",attrs:{"id":"account"}},[_c('router-link',{attrs:{"id":"goHome","to":"home"}},[_vm._v("home")]),_vm._v(" "),_c('div',{attrs:{"id":"username"}},[_vm._v(" "+_vm._s(_vm.username)+" ")]),_vm._v(" "),_c('div',{staticClass:"userInfo"},[_c('span',[_vm._v(" "+_vm._s(_vm.currentUserPosts.length)+" ")]),_vm._v(" posts ")]),_vm._v(" "),_vm._m(0),_vm._v(" "),_vm._m(1),_vm._v(" "),_c('hr'),_vm._v(" "),_c('div',{attrs:{"id":"postsContainer"}},_vm._l((_vm.currentUserPosts),function(currentUserPost){return _c('post',{key:currentUserPost.id,staticClass:"post",attrs:{"text":currentUserPost.text,"date":currentUserPost.date}})}),1)],1)}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"userInfo"},[_c('span',[_vm._v("0")]),_vm._v(" followers ")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"userInfo"},[_c('span',[_vm._v("0")]),_vm._v(" following ")])}]
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"userInfo"},[_c('span',[_vm._v("0")]),_vm._v(" readers ")])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"userInfo"},[_c('span',[_vm._v("0")]),_vm._v(" reading ")])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
