@@ -33,7 +33,7 @@ export default {
     signIn(email, password){
       firebase.auth().signInWithEmailAndPassword(email, password).then(
         (user) => {
-          this.router.replace('home');
+          this.$router.replace('home');
         },
 
         (err) => {

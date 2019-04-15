@@ -14,7 +14,8 @@ export const router = new VueRouter({
 
   mode: "history",
   routes: [
-    { redirect: "login", path: "/" },
+    { redirect: "/login", path: "/" },
+    { redirect: "/login", path: "*" },
     { component: Login, path:"*" },
     { component: Login, path: "/login" },
     { component: Create, path: "/create" },
@@ -50,11 +51,7 @@ firebase.initializeApp(config);
 firebase.auth().onAuthStateChanged(function(user) {
 
   if (user) {
-    if(user.displayName != null) {
-      router.replace('home');
-    }else {
-      router.replace('login');
-    }
+    
   }else {
     firebase.auth().signOut();
     router.replace('login');

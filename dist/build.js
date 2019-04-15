@@ -1579,7 +1579,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 const router = new __WEBPACK_IMPORTED_MODULE_3_vue_router__["a" /* default */]({
 
   mode: "history",
-  routes: [{ redirect: "login", path: "/" }, { component: __WEBPACK_IMPORTED_MODULE_5__components_Login__["a" /* default */], path: "*" }, { component: __WEBPACK_IMPORTED_MODULE_5__components_Login__["a" /* default */], path: "/login" }, { component: __WEBPACK_IMPORTED_MODULE_6__components_Create__["a" /* default */], path: "/create" }, { component: __WEBPACK_IMPORTED_MODULE_7__components_Account__["a" /* default */], path: "/account" }, {
+  routes: [{ redirect: "/login", path: "/" }, { redirect: "/login", path: "*" }, { component: __WEBPACK_IMPORTED_MODULE_5__components_Login__["a" /* default */], path: "*" }, { component: __WEBPACK_IMPORTED_MODULE_5__components_Login__["a" /* default */], path: "/login" }, { component: __WEBPACK_IMPORTED_MODULE_6__components_Create__["a" /* default */], path: "/create" }, { component: __WEBPACK_IMPORTED_MODULE_7__components_Account__["a" /* default */], path: "/account" }, {
     component: __WEBPACK_IMPORTED_MODULE_4__components_Home__["a" /* default */],
     path: "/home",
     meta: {
@@ -1609,13 +1609,7 @@ __WEBPACK_IMPORTED_MODULE_1_firebase___default.a.initializeApp(config);
 
 __WEBPACK_IMPORTED_MODULE_1_firebase___default.a.auth().onAuthStateChanged(function (user) {
 
-  if (user) {
-    if (user.displayName != null) {
-      router.replace('home');
-    } else {
-      router.replace('login');
-    }
-  } else {
+  if (user) {} else {
     __WEBPACK_IMPORTED_MODULE_1_firebase___default.a.auth().signOut();
     router.replace('login');
   };
@@ -7597,7 +7591,7 @@ var Component = normalizeComponent(
 
     signIn(email, password) {
       __WEBPACK_IMPORTED_MODULE_0_firebase___default.a.auth().signInWithEmailAndPassword(email, password).then(user => {
-        this.router.replace('home');
+        this.$router.replace('home');
       }, err => {
         alert('Error ' + err.message);
       });
@@ -66129,7 +66123,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Login_vue__ = __webpack_require__(73);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4583cd76_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Login_vue__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3b20c0e0_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Login_vue__ = __webpack_require__(170);
 function injectStyle (ssrContext) {
   __webpack_require__(168)
 }
@@ -66144,12 +66138,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-4583cd76"
+var __vue_scopeId__ = "data-v-3b20c0e0"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Login_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4583cd76_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Login_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3b20c0e0_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Login_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -66170,7 +66164,7 @@ var content = __webpack_require__(169);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(15)("1e181f1d", content, true, {});
+var update = __webpack_require__(15)("c0f0f8f4", content, true, {});
 
 /***/ }),
 /* 169 */
@@ -66181,7 +66175,7 @@ exports = module.exports = __webpack_require__(14)(false);
 
 
 // module
-exports.push([module.i, "#loginWrapper[data-v-4583cd76]{margin-top:10%}#appTitle[data-v-4583cd76]{font-family:Assistant,sans-serif;font-weight:100;font-size:84px;color:#282828}#appDescription[data-v-4583cd76]{font-family:Heebo,sans-serif;font-size:22px;margin-bottom:2%;color:#282828}#loginPanel[data-v-4583cd76]{width:fit-content;margin:0 auto;margin-top:5%}input[data-v-4583cd76]{padding:10px;font-size:13px;box-shadow:2px 2px 10px #919191;margin-top:4%}#login[data-v-4583cd76]{font-family:Lato,sans-serif;font-size:20px;margin-top:8%;transition-duration:.4s}.readyToLogin[data-v-4583cd76]{padding:10px;background-color:#6d6d6d;box-shadow:2px 2px 10px #919191;color:#fffaf0;cursor:pointer}.readyToLogin[data-v-4583cd76]:hover{transform:scale(.9)}#linkCreate[data-v-4583cd76]{font-family:Lato,sans-serif;color:#000;text-decoration:none;transition-duration:.4s}#linkCreate[data-v-4583cd76]:hover{color:#fffaf0}", ""]);
+exports.push([module.i, "#loginWrapper[data-v-3b20c0e0]{margin-top:10%}#appTitle[data-v-3b20c0e0]{font-family:Assistant,sans-serif;font-weight:100;font-size:84px;color:#282828}#appDescription[data-v-3b20c0e0]{font-family:Heebo,sans-serif;font-size:22px;margin-bottom:2%;color:#282828}#loginPanel[data-v-3b20c0e0]{width:fit-content;margin:0 auto;margin-top:5%}input[data-v-3b20c0e0]{padding:10px;font-size:13px;box-shadow:2px 2px 10px #919191;margin-top:4%}#login[data-v-3b20c0e0]{font-family:Lato,sans-serif;font-size:20px;margin-top:8%;transition-duration:.4s}.readyToLogin[data-v-3b20c0e0]{padding:10px;background-color:#6d6d6d;box-shadow:2px 2px 10px #919191;color:#fffaf0;cursor:pointer}.readyToLogin[data-v-3b20c0e0]:hover{transform:scale(.9)}#linkCreate[data-v-3b20c0e0]{font-family:Lato,sans-serif;color:#000;text-decoration:none;transition-duration:.4s}#linkCreate[data-v-3b20c0e0]:hover{color:#fffaf0}", ""]);
 
 // exports
 
