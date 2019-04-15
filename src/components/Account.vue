@@ -20,7 +20,7 @@
 <script>
 import firebase from 'firebase'
 import router from 'vue-router'
-import { userPosts } from '../database/post'
+import userPosts from '../database/post'
 import post from './Post'
 
 export default {
@@ -32,14 +32,6 @@ export default {
       user: firebase.auth().currentUser,
       userPosts,
       currentUserPosts: [ ],
-    }
-  },
-  mounted() {
-    for(var i = 0; i < userPosts.length; i++) {
-        var post = userPosts[i];
-        if(post.username == this.username) {
-          this.currentUserPosts.push(post);
-        }
     }
   },
   components: {
