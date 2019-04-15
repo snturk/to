@@ -1579,7 +1579,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
 const router = new __WEBPACK_IMPORTED_MODULE_3_vue_router__["a" /* default */]({
 
   mode: "history",
-  routes: [{ redirect: "/to/login", path: "/" }, { redirect: "/to/login", path: "*" }, { component: __WEBPACK_IMPORTED_MODULE_5__components_Login__["a" /* default */], path: "*" }, { component: __WEBPACK_IMPORTED_MODULE_5__components_Login__["a" /* default */], path: "/to/login" }, { component: __WEBPACK_IMPORTED_MODULE_6__components_Create__["a" /* default */], path: "/to/create" }, { component: __WEBPACK_IMPORTED_MODULE_7__components_Account__["a" /* default */], path: "/to/account" }, {
+  routes: [{ redirect: "/login", path: "/" }, { redirect: "/login", path: "*" }, { component: __WEBPACK_IMPORTED_MODULE_5__components_Login__["a" /* default */], path: "*" }, { component: __WEBPACK_IMPORTED_MODULE_5__components_Login__["a" /* default */], path: "/login" }, { component: __WEBPACK_IMPORTED_MODULE_6__components_Create__["a" /* default */], path: "/create" }, { component: __WEBPACK_IMPORTED_MODULE_7__components_Account__["a" /* default */], path: "/account" }, {
     component: __WEBPACK_IMPORTED_MODULE_4__components_Home__["a" /* default */],
     path: "/home",
     meta: {
