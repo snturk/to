@@ -5,7 +5,7 @@
       <div id="navContainer">
         <div id="headTitle" align="left">TO</div>
         <div id="navRight">
-          <div id="account"> <router-link to="account"> {{username}} </router-link> </div>
+          <div id="account"> <router-link :to="'/user/' + username"> {{username}} </router-link> </div>
           <div id="logout" @click="signOut">log out</div>
         </div>
       </div>

@@ -4,7 +4,7 @@
       <div id="post-text"> {{text}} </div>
     </div>
     
-    <div id="post-info"> <span>{{username}}</span> {{date}}</div>
+    <div id="post-info"> <span><router-link :to="'/user/' + username">{{username}}</router-link></span> {{date}}</div>
   </div>
 </template>
 
@@ -59,9 +59,14 @@ export default {
   bottom:4px;
   right:4px;
 }
-#post-info span {
+#post-info span a {
   color: #575757;
   margin-right: 5px;
+  transition-duration: 200ms;
+}
+#post-info span a:hover {
+  color: #383838;
+  text-decoration: underline;
 }
 
 @keyframes fadeIn {

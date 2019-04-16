@@ -1,7 +1,7 @@
 <template>
   <div class="component" id="account">
-    <router-link id="goHome" to="home">home</router-link>
-    <div id="username"> {{username}} </div>
+    <router-link id="goHome" to="/home">home</router-link>
+    <div id="username"> {{$route.params.username}} </div>
     <div class="userInfo"> <span> {{currentUserPosts.length}} </span> posts </div>
     <div class="userInfo"> <span>0</span> readers </div>
     <div class="userInfo"> <span>0</span> reading </div>
@@ -28,14 +28,13 @@ export default {
   name: 'Account',
   data() {
     return {
-      username: firebase.auth().currentUser.displayName,
-      email: firebase.auth().currentUser.email,
-      user: firebase.auth().currentUser,
+      username: null,
       userPosts,
       currentUserPosts: [ ],
     }
   },
   mounted() {
+    this.username = this.$route.params.username;
     for(var i = 0; i < userPosts.length; i++) {
         var post = userPosts[i];
         if(post.username == this.username) {
