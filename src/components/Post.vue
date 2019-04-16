@@ -30,12 +30,12 @@ export default {
   font-family: 'Raleway';
   font-weight: 700;
   background-color: #c7c7c7;
-  border-radius: 4px;
-  box-shadow: 2px 2px 10px rgb(116, 116, 116);
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 1.2px solid black;
+  padding: 10px;
   position: relative;
   animation: fadeIn 2s forwards;
   transition-duration: 400ms;
-  margin-top: 10px;
 }
 
 #text-container {
@@ -46,7 +46,7 @@ export default {
 
 #post-text {
   word-wrap: break-word;
-  padding: 35px;
+  padding: 7%;
 }
 
 #post-info {
@@ -55,9 +55,7 @@ export default {
   font-size: 13px;
   letter-spacing: 0.4px;
   font-family: 'Heebo';
-  position:absolute;
-  bottom:4px;
-  right:4px;
+  text-align: right;
 }
 #post-info span a {
   color: #575757;

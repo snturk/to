@@ -2,6 +2,7 @@
   <div class="component" id="account">
     <router-link id="goHome" to="/home">home</router-link>
     <div id="username"> {{$route.params.username}} </div>
+    <hr>
     <div class="userInfo"> <span> {{currentUserPosts.length}} </span> posts </div>
     <div class="userInfo"> <span>0</span> readers </div>
     <div class="userInfo"> <span>0</span> reading </div>
@@ -50,15 +51,12 @@ export default {
 
 <style scoped>
 
-.component {
-  margin-top: 15px;
-}
-
 #goHome {
   cursor: pointer;
   font-family: 'Lato';
   font-size: 20px;
   padding: 2px 6px 6px 6px;
+  margin-top: 2%;
   margin-left: 2%;
   width: fit-content;
   border: 0.8px black solid;
@@ -71,8 +69,7 @@ export default {
   font-size: 34px;
   font-family: 'Assistant';
   font-weight: 700;
-  margin-right: 10%;
-  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .userInfo {
@@ -90,7 +87,7 @@ export default {
 }
 
 hr {
-  height: 1.4px;
+  height: 1px;
   color: black;
   background-color: black;
   border: none;
@@ -103,6 +100,7 @@ hr {
   max-width: 60%;
   margin: 0 auto;
   margin-bottom: 2%;
+  box-shadow: 1.4px 1.4px 7px rgb(116, 116, 116);
 }
 
 @media only screen and (max-width: 768px){

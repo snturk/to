@@ -151,9 +151,10 @@ export default {
 #posts {
   margin: 0 auto;
   margin-top: 5%;
-  max-width: 50%;
+  max-width: 60%;
   height: fit-content;
   border-radius: 4px;
+  box-shadow: 1.4px 1.4px 7px rgb(116, 116, 116);
 }
 #posts:last-child {
   margin-bottom: 4%;
@@ -180,7 +181,7 @@ export default {
   }
 
   #posts {
-    max-width: 70%;
+    max-width: 80%;
   }
 }
 </style>
