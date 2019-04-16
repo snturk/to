@@ -7499,7 +7499,7 @@ function setLogLevel(level) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Post_vue__ = __webpack_require__(72);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5fa88155_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Post_vue__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ce8da750_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Post_vue__ = __webpack_require__(165);
 function injectStyle (ssrContext) {
   __webpack_require__(163)
 }
@@ -7514,12 +7514,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-5fa88155"
+var __vue_scopeId__ = "data-v-ce8da750"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Post_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5fa88155_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Post_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_ce8da750_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Post_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -66087,7 +66087,7 @@ var content = __webpack_require__(164);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(15)("822a5eac", content, true, {});
+var update = __webpack_require__(15)("779e7de8", content, true, {});
 
 /***/ }),
 /* 164 */
@@ -66098,7 +66098,7 @@ exports = module.exports = __webpack_require__(14)(false);
 
 
 // module
-exports.push([module.i, "#post[data-v-5fa88155]{font-size:17px;font-family:Raleway;font-weight:700;background-color:#c7c7c7;border-radius:4px 4px 0 0;border-bottom:1.2px solid #000;padding:10px;position:relative;animation:fadeIn-data-v-5fa88155 2s forwards;transition-duration:.4s}#text-container[data-v-5fa88155]{width:95%;height:auto;margin:0 auto}#post-text[data-v-5fa88155]{word-wrap:break-word;padding:7%}#post-info[data-v-5fa88155]{margin-top:2%;color:#575757;font-size:13px;letter-spacing:.4px;font-family:Heebo;text-align:right}#post-info span a[data-v-5fa88155]{color:#575757;margin-right:5px;transition-duration:.2s}#post-info span a[data-v-5fa88155]:hover{color:#383838;text-decoration:underline}@keyframes fadeIn-data-v-5fa88155{0%{opacity:.1}to{opacity:1}}@media only screen and (max-width:768px){#post[data-v-5fa88155]{font-size:14px}#post-info[data-v-5fa88155]{font-size:10px}}", ""]);
+exports.push([module.i, "#post[data-v-ce8da750]{font-size:17px;font-family:Raleway;font-weight:700;background-color:#c7c7c7;border-radius:4px 4px 0 0;border-bottom:.6px solid #000;padding:10px;position:relative;animation:fadeIn-data-v-ce8da750 2s forwards;transition-duration:.4s}#text-container[data-v-ce8da750]{width:95%;height:auto;margin:0 auto}#post-text[data-v-ce8da750]{word-wrap:break-word;padding:7%}#post-info[data-v-ce8da750]{margin-top:2%;color:#575757;font-size:13px;letter-spacing:.4px;font-family:Heebo;text-align:right}#post-info span a[data-v-ce8da750]{color:#575757;margin-right:5px;transition-duration:.2s}#post-info span a[data-v-ce8da750]:hover{color:#383838;text-decoration:underline}@keyframes fadeIn-data-v-ce8da750{0%{opacity:.1}to{opacity:1}}@media only screen and (max-width:768px){#post[data-v-ce8da750]{font-size:14px}#post-info[data-v-ce8da750]{font-size:10px}}", ""]);
 
 // exports
 

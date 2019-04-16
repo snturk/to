@@ -31,7 +31,7 @@ export default {
   font-weight: 700;
   background-color: #c7c7c7;
   border-radius: 4px 4px 0px 0px;
-  border-bottom: 1.2px solid black;
+  border-bottom: 0.6px solid black;
   padding: 10px;
   position: relative;
   animation: fadeIn 2s forwards;
