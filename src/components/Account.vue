@@ -105,6 +105,10 @@ hr {
 
 @media only screen and (max-width: 768px){
 
+  #postsContainer {
+    max-width: 80%;
+  }
+
   #username {
     font-size: 24px;
     margin-right: 1%;
