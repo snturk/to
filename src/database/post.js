@@ -24,12 +24,14 @@ function getData(data) {
     var username = posts[id].username;
     var text = posts[id].text;
     var date = posts[id].date;
+    var replies = posts[id].replies;
     userPosts.push({
       id: id,
       username: username,
       text: text,
-      date: date
+      date: date,
+      replies: replies,
     });
   }
   userPosts.reverse();
-}
+};

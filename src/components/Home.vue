@@ -18,9 +18,11 @@
     <div id="posts">
       <post  
         v-for="userPost in userPosts" :key="userPost.id"
+        :id="userPost.id"
         :text="userPost.text"
         :username="userPost.username"
         :date="userPost.date"
+        :replies="userPost.replies"
         >
       </post>
     </div>
@@ -43,6 +45,7 @@ export default {
         username: firebase.auth().currentUser.displayName,
         text: "",
         date: new Date().toISOString().slice(0,10),
+        replies: [ ]
       },
       username: firebase.auth().currentUser.displayName,
     }
