@@ -2,7 +2,7 @@
   <div class="component" id="createWrapper">
     <div id="createForm">
       <div id="formHeading">create your account</div>
-      <input type="text" name="email" v-model="email" placeholder="email"><br>
+      <input type="email" name="email" v-model="email" placeholder="email"><br>
       <input type="text" name="username" v-model="username" placeholder="username"><br>
       <input type="password" name="password" v-model="password" placeholder="password">
       <div id="createButton" :class="{readyToCreate: email && password && username}" @click="createUser">create & login</div>

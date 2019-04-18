@@ -6,7 +6,7 @@
     </div>
     <div id="loginPanel">
       
-      <input type="text" name="email" id="input-email" v-model="email" placeholder="email"><br>
+      <input type="email" name="email" id="input-email" v-model="email" placeholder="email"><br>
       <input type="password" name="password" id="input-password" v-model="password" placeholder="password">
       <div id="login" @click="signIn(email, password)" :class="{readyToLogin: email && password}">log in</div>
       <router-link to="/create" id="linkCreate">create an account</router-link>
