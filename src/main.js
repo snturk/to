@@ -15,7 +15,7 @@ export const router = new VueRouter({
   mode: "history",
   routes: [
     { redirect: "/login", path: "/" },
-    { redirect: "/login", path: "*" },
+    { redirect: "/", path: "*" },
     { component: Login, path:"*" },
     { component: Login, path: "/login" },
     { component: Create, path: "/create" },
