@@ -146,6 +146,7 @@ export default {
 
 #replyText {
   color: #e9e9e9;
+  word-wrap: break-word;
 }
 
 #replyInfo {
@@ -179,6 +180,8 @@ export default {
   background-color: #575757;
   color: #c7c7c7;
   border-radius: 4px;
+  max-width: 60%;
+  max-height: 10px;
 }
 
 @keyframes fadeIn {
@@ -196,6 +199,23 @@ export default {
   }
   #post-info {
     font-size: 10px;
+  }
+
+  #replyText {
+  font-size: 14px;
+  }
+
+  #replyInfo {
+    font-size: 10px;
+  }
+
+  #input-reply {
+    font-size: 14px;
+    width: 50%;
+  }
+
+  #replyBtn {
+    font-size: 15px;
   }
 }
 
