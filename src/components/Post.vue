@@ -47,12 +47,9 @@ export default {
       },
       replyShow: false,
       postID: this.id,
-      replyLength: null,
     }
   },
-  mounted() {
-    this.replyLength = this.replies.length;
-  },
+
   methods: {
     toggleReply() {
       if(this.replyShow) {

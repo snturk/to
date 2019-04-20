@@ -42,15 +42,25 @@ export default {
     return {
       userPosts,
       newPost: {
-        username: firebase.auth().currentUser.displayName,
-        text: "",
+        username: undefined,
+        text: undefined,
         date: new Date().toISOString().slice(0,10),
         replies: [ ]
       },
-      username: firebase.auth().currentUser.displayName,
+      username: undefined,
     }
   },
+  mounted() {
+    this.setUsername();
+  },
+  updated() {
+    this.setUsername();
+  },
   methods: {
+    setUsername() {
+      this.newPost.username = firebase.auth().currentUser.displayName;
+      this.username = firebase.auth().currentUser.displayName;
+    },
     postDB() {
       if (this.newPost.text.replace(/\s/g, '').length) {
 

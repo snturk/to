@@ -30,7 +30,7 @@ export default {
   name: 'Account',
   data() {
     return {
-      username: null,
+      username: undefined,
       userPosts,
       currentUserPosts: [ ],
     }

@@ -17,15 +17,13 @@
 <script>
 import firebase from 'firebase'
 import VueRouter from 'vue-router'
-import router from '../main'
 
 export default {
   name: "Login",
   data(){
     return{
-      email: "",
-      password: "",
-      router
+      email: undefined,
+      password: undefined,
     }
   },
   methods: {
