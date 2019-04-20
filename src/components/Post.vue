@@ -10,8 +10,8 @@
       </span> 
       {{date}}
     </div>
-    <div class="toggleReply" @click="toggleReply()" v-if="!replyShow">show replies</div>
-    <div class="toggleReply" @click="toggleReply()" v-if="replyShow">hide replies</div>
+    <div class="toggleReply" @click="toggleReply()" v-show="!replyShow">show replies</div>
+    <div class="toggleReply" @click="toggleReply()" v-show="replyShow">hide replies</div>
     <div id="replies-container" v-if="replyShow">
       <div class="reply" v-for="reply in replies" :key="reply.text">
         <div id="replyText"> {{reply.text}} </div>
@@ -46,8 +46,12 @@ export default {
         date: new Date().toISOString().slice(0,10),
       },
       replyShow: false,
-      postID: this.id
+      postID: this.id,
+      replyLength: null,
     }
+  },
+  mounted() {
+    this.replyLength = this.replies.length;
   },
   methods: {
     toggleReply() {
@@ -88,7 +92,7 @@ export default {
   background-color: #c7c7c7;
   border-radius: 4px 4px 0px 0px;
   border-bottom: 0.6px solid black;
-  padding: 10px;
+  padding: 6px;
   position: relative;
   animation: fadeIn 2s forwards;
   transition-duration: 400ms;
@@ -102,7 +106,7 @@ export default {
 
 #post-text {
   word-wrap: break-word;
-  padding: 7%;
+  padding: 6%;
 }
 
 #post-info {
@@ -115,7 +119,6 @@ export default {
 }
 #post-info span a {
   color: #575757;
-  margin-right: 5px;
   transition-duration: 200ms;
 }
 #post-info span a:hover {
@@ -139,7 +142,7 @@ export default {
 }
 .reply {
   border-bottom: 0.4px solid floralwhite;
-  padding: 10px;
+  padding: 8px;
   animation: fadeIn 1.3s forwards;
   transition-duration: 400ms;
 }
@@ -160,7 +163,6 @@ export default {
 
 #replyInfo span a {
   color: #c7c7c7;
-  margin-right: 5px;
   transition-duration: 200ms;
 }
 #replyInfo span a:hover {
@@ -169,7 +171,7 @@ export default {
 }
 
 #addReply {
-  padding: 10px;
+  padding: 5%;
   font-size: 17px;
   color: #e9e9e9;
 }

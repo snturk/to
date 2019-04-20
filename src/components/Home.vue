@@ -58,7 +58,6 @@ export default {
           
           this.userPosts.length = 0;      
           ref.push(this.newPost);
-          console.log("Infos has been added to DB.")
           this.newPost.text = null;
 
         }else {

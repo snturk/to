@@ -13,6 +13,7 @@
       v-for="currentUserPost in currentUserPosts" :key="currentUserPost.id"
       :text="currentUserPost.text"
       :date="currentUserPost.date"
+      :replies="currentUserPost.replies"
       >
       </post>
     </div>
