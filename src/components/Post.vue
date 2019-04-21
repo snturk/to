@@ -20,7 +20,6 @@
             <router-link :to="'/user/' + username">{{reply.username}}</router-link> 
           </span>
           {{reply.date}}
-
         </div>
       </div>
       <div id="addReply">
@@ -125,7 +124,8 @@ export default {
 
 /*reply*/
 .toggleReply {
-  font-size: 15px;
+  cursor: pointer;
+  font-size: 14px;
 }
 #replies-container {
   background-color: #2e2e2e;
