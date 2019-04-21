@@ -33,7 +33,7 @@ export default {
       currentUserPosts: [ ],
     }
   },
-  updated() {
+  mounted() {
     getPosts();
     for(var i = 0; i < userPosts.length; i++) {
         var post = userPosts[i];
