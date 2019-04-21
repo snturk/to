@@ -3610,7 +3610,6 @@ exports.stringToByteArray = stringToByteArray$1;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return userPosts; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return ref; });
-/* harmony export (immutable) */ __webpack_exports__["a"] = getPosts;
 var userPosts = [];
 
 var config = {
@@ -3626,33 +3625,28 @@ firebase.initializeApp(config);
 var database = firebase.database();
 var ref = database.ref("user-posts");
 
-function getPosts() {
-  userPosts = [];
-  ref.on("value", getData);
+ref.on("value", getData);
 
-  function getData(data) {
-    var posts = data.val();
-    var keys = Object.keys(posts);
+function getData(data) {
+  var posts = data.val();
+  var keys = Object.keys(posts);
 
-    for (var i = 0; i < keys.length; i++) {
-      var id = keys[i];
-      var username = posts[id].username;
-      var text = posts[id].text;
-      var date = posts[id].date;
-      var replies = posts[id].replies;
-      userPosts.push({
-        id: id,
-        username: username,
-        text: text,
-        date: date,
-        replies: replies
-      });
-    }
-    userPosts.reverse();
-  };
-}
-
-getPosts();
+  for (var i = 0; i < keys.length; i++) {
+    var id = keys[i];
+    var username = posts[id].username;
+    var text = posts[id].text;
+    var date = posts[id].date;
+    var replies = posts[id].replies;
+    userPosts.push({
+      id: id,
+      username: username,
+      text: text,
+      date: date,
+      replies: replies
+    });
+  }
+  userPosts.reverse();
+};
 
 /***/ }),
 /* 39 */
@@ -7790,15 +7784,15 @@ var Component = normalizeComponent(
   name: 'Account',
   data() {
     return {
-      username: this.$route.params.username,
-      userPosts: __WEBPACK_IMPORTED_MODULE_0__database_post__["c" /* userPosts */],
+      username: undefined,
+      userPosts: __WEBPACK_IMPORTED_MODULE_0__database_post__["default"],
       currentUserPosts: []
     };
   },
-  mounted() {
-    Object(__WEBPACK_IMPORTED_MODULE_0__database_post__["a" /* getPosts */])();
-    for (var i = 0; i < __WEBPACK_IMPORTED_MODULE_0__database_post__["c" /* userPosts */].length; i++) {
-      var post = __WEBPACK_IMPORTED_MODULE_0__database_post__["c" /* userPosts */][i];
+  updated() {
+    this.username = this.$route.params.username;
+    for (var i = 0; i < __WEBPACK_IMPORTED_MODULE_0__database_post__["default"].length; i++) {
+      var post = __WEBPACK_IMPORTED_MODULE_0__database_post__["default"][i];
       if (post.username == this.username) {
         this.currentUserPosts.push(post);
       }
@@ -66346,7 +66340,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Account_vue__ = __webpack_require__(75);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d57dc580_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Account_vue__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a44b45f2_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Account_vue__ = __webpack_require__(178);
 function injectStyle (ssrContext) {
   __webpack_require__(176)
 }
@@ -66361,12 +66355,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-d57dc580"
+var __vue_scopeId__ = "data-v-a44b45f2"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Account_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_d57dc580_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Account_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a44b45f2_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Account_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -66387,7 +66381,7 @@ var content = __webpack_require__(177);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(15)("7123c5e9", content, true, {});
+var update = __webpack_require__(15)("662ec662", content, true, {});
 
 /***/ }),
 /* 177 */
@@ -66398,7 +66392,7 @@ exports = module.exports = __webpack_require__(14)(false);
 
 
 // module
-exports.push([module.i, "#goHome[data-v-d57dc580]{cursor:pointer;font-family:Lato;font-size:20px;padding:2px 6px 6px;margin-top:2%;margin-left:2%;width:fit-content;border:.8px solid #000;border-radius:4px;box-shadow:2px 2px 10px #b3b3b3;display:block}#username[data-v-d57dc580]{font-size:34px;font-family:Assistant;font-weight:700;margin-bottom:10px}.userInfo[data-v-d57dc580]{font-size:18px;font-family:Raleway;display:inline-block;margin-left:5%}.userInfo span[data-v-d57dc580]{font-size:23px;font-weight:700;font-family:Assistant;letter-spacing:1px}hr[data-v-d57dc580]{height:1px;color:#000;background-color:#000;border:none;margin-bottom:2%;margin-top:2%}#postsContainer[data-v-d57dc580]{max-width:60%;margin:0 auto;margin-bottom:2%;box-shadow:1.4px 1.4px 7px #747474}@media only screen and (max-width:768px){#postsContainer[data-v-d57dc580]{max-width:80%}#username[data-v-d57dc580]{font-size:24px;margin-right:1%;margin-left:-2%}.userInfo[data-v-d57dc580]{font-size:15px;margin-left:1%}.userInfo span[data-v-d57dc580]{font-size:19px}}", ""]);
+exports.push([module.i, "#goHome[data-v-a44b45f2]{cursor:pointer;font-family:Lato;font-size:20px;padding:2px 6px 6px;margin-top:2%;margin-left:2%;width:fit-content;border:.8px solid #000;border-radius:4px;box-shadow:2px 2px 10px #b3b3b3;display:block}#username[data-v-a44b45f2]{font-size:34px;font-family:Assistant;font-weight:700;margin-bottom:10px}.userInfo[data-v-a44b45f2]{font-size:18px;font-family:Raleway;display:inline-block;margin-left:5%}.userInfo span[data-v-a44b45f2]{font-size:23px;font-weight:700;font-family:Assistant;letter-spacing:1px}hr[data-v-a44b45f2]{height:1px;color:#000;background-color:#000;border:none;margin-bottom:2%;margin-top:2%}#postsContainer[data-v-a44b45f2]{max-width:60%;margin:0 auto;margin-bottom:2%;box-shadow:1.4px 1.4px 7px #747474}@media only screen and (max-width:768px){#postsContainer[data-v-a44b45f2]{max-width:80%}#username[data-v-a44b45f2]{font-size:24px;margin-right:1%;margin-left:-2%}.userInfo[data-v-a44b45f2]{font-size:15px;margin-left:1%}.userInfo span[data-v-a44b45f2]{font-size:19px}}", ""]);
 
 // exports
 
