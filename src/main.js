@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import firebase from 'firebase'
-import App from './App.vue'
 import VueRouter from 'vue-router'
-
 Vue.use(VueRouter);
 
+import App from './App.vue'
 import Home from './components/Home'
 import Login from './components/Login'
 import Create from './components/Create';
@@ -12,11 +11,8 @@ import Account from './components/Account'
 
 export const router = new VueRouter({
 
-  mode: "history",
   routes: [
-    { redirect: "/login", path: "/" },
-    { redirect: "/", path: "*" },
-    { component: Login, path:"*" },
+    { component: Login, path: "/" },
     { component: Login, path: "/login" },
     { component: Create, path: "/create" },
     { component: Account, path: "/user/:username" },
@@ -28,7 +24,7 @@ export const router = new VueRouter({
       }
     },
   ],
- 
+  mode: "history",
 
 });
 
@@ -51,13 +47,8 @@ firebase.initializeApp(config);
 firebase.auth().onAuthStateChanged(function(user) {
 
   if (user) {
-    if(user.displayName != null) {
-      router.replace('home');
-    }else {
-      router.replace('login');
-    }
+    router.replace('home');
   }else {
-    firebase.auth().signOut();
     router.replace('login');
   };
 

@@ -21,9 +21,7 @@
 </template>
 
 <script>
-import firebase from 'firebase'
-import router from 'vue-router'
-import { userPosts } from '../database/post'
+import userPosts from '../database/post'
 import post from './Post'
 
 export default {
@@ -35,7 +33,7 @@ export default {
       currentUserPosts: [ ],
     }
   },
-  mounted() {
+  updated() {
     this.username = this.$route.params.username;
     for(var i = 0; i < userPosts.length; i++) {
         var post = userPosts[i];
