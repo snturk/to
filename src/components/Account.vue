@@ -21,20 +21,20 @@
 </template>
 
 <script>
-import userPosts from '../database/post'
+import {userPosts, getPosts} from '../database/post'
 import post from './Post'
 
 export default {
   name: 'Account',
   data() {
     return {
-      username: undefined,
+      username: this.$route.params.username,
       userPosts,
       currentUserPosts: [ ],
     }
   },
   updated() {
-    this.username = this.$route.params.username;
+    getPosts();
     for(var i = 0; i < userPosts.length; i++) {
         var post = userPosts[i];
         if(post.username == this.username) {
