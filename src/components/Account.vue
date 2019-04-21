@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import {userPosts, getPosts} from '../database/post'
+import { userPosts, getPosts } from '../database/post'
 import post from './Post'
 
 export default {
@@ -35,7 +35,7 @@ export default {
   },
   mounted() {
     getPosts();
-      for(var i = 0; i < userPosts.length; i++) {
+    for(var i = 0; i < userPosts.length; i++) {
         var post = userPosts[i];
         if(post.username == this.username) {
           this.currentUserPosts.push(post);
