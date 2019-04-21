@@ -3683,7 +3683,7 @@ const router = new __WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]({
       requiresAuth: true
     }
   }],
-  mode: "history"
+  mode: "abstract"
 
 });
 /* harmony export (immutable) */ __webpack_exports__["router"] = router;
