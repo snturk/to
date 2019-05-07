@@ -37,7 +37,6 @@ export function getPosts() {
     }
     userPosts.reverse();
   };
-
 }
 
 getPosts();
