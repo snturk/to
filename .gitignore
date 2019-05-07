@@ -1,5 +1,3 @@
 node_modules
-src/database
-src/main.js
 src/database/post.js
 src/main.js
