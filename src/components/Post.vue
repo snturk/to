@@ -125,7 +125,8 @@ export default {
 
 /*reply*/
 .toggleReply {
-  font-size: 14px;
+  font-size: 13px;
+  color: #474747;
 }
 #replies-container {
   background-color: #2e2e2e;
@@ -193,29 +194,21 @@ export default {
 }
 
 @media only screen and (max-width: 768px){
-  #post {
-    font-size: 14px;
-  }
-  #post-info {
-    font-size: 10px;
-  }
+  #post { font-size: 14px; }
+  #post-info { font-size: 10px; }
 
-  #replyText {
-  font-size: 14px;
-  }
+  .toggleReply { font-size: 13px; }
 
-  #replyInfo {
-    font-size: 10px;
-  }
+  #replyText { font-size: 14px; }
+
+  #replyInfo { font-size: 10px; }
 
   #input-reply {
     font-size: 14px;
     width: 50%;
   }
 
-  #replyBtn {
-    font-size: 15px;
-  }
+  #replyBtn { font-size: 15px; }
 }
 
 

@@ -7513,7 +7513,7 @@ if (inBrowser && window.Vue) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Post_vue__ = __webpack_require__(72);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4f08cdf7_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Post_vue__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_350969b8_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Post_vue__ = __webpack_require__(165);
 function injectStyle (ssrContext) {
   __webpack_require__(163)
 }
@@ -7528,12 +7528,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-4f08cdf7"
+var __vue_scopeId__ = "data-v-350969b8"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Post_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_4f08cdf7_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Post_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_350969b8_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Post_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -66155,7 +66155,7 @@ var content = __webpack_require__(164);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(15)("1963c496", content, true, {});
+var update = __webpack_require__(15)("1d6cd24d", content, true, {});
 
 /***/ }),
 /* 164 */
@@ -66166,7 +66166,7 @@ exports = module.exports = __webpack_require__(14)(false);
 
 
 // module
-exports.push([module.i, "#post[data-v-4f08cdf7]{font-size:17px;font-family:Raleway;font-weight:700;background-color:#c7c7c7;border-radius:4px 4px 0 0;border-bottom:.6px solid #000;padding:6px;position:relative;animation:fadeIn-data-v-4f08cdf7 2s forwards;transition-duration:.4s}#text-container[data-v-4f08cdf7]{width:95%;height:auto;margin:0 auto}#post-text[data-v-4f08cdf7]{word-wrap:break-word;padding:6%}#post-info[data-v-4f08cdf7]{margin-top:2%;color:#575757;font-size:13px;letter-spacing:.4px;font-family:Heebo;text-align:right}#post-info span a[data-v-4f08cdf7]{color:#575757;transition-duration:.2s}#post-info span a[data-v-4f08cdf7]:hover{color:#383838;text-decoration:underline}.toggleReply[data-v-4f08cdf7]{font-size:14px}#replies-container[data-v-4f08cdf7]{background-color:#2e2e2e;border-radius:4px;margin:0 auto;margin-top:3%;margin-bottom:3%;max-width:65%;animation:fadeIn-data-v-4f08cdf7 .5s forwards;transition-duration:.4s}.reply[data-v-4f08cdf7]{border-bottom:.4px solid #fffaf0;padding:8px;animation:fadeIn-data-v-4f08cdf7 1.3s forwards;transition-duration:.4s}#replyText[data-v-4f08cdf7]{color:#e9e9e9;word-wrap:break-word}#replyInfo[data-v-4f08cdf7]{color:#c7c7c7;font-size:13px;letter-spacing:.4px;font-family:Heebo;text-align:right;margin-top:2%}#replyInfo span a[data-v-4f08cdf7]{color:#c7c7c7;transition-duration:.2s}#replyInfo span a[data-v-4f08cdf7]:hover{color:#9c9c9c;text-decoration:underline}#addReply[data-v-4f08cdf7]{padding:5%;font-size:17px;color:#e9e9e9}#input-reply[data-v-4f08cdf7]{padding:4px;font-size:15px;background-color:#575757;color:#c7c7c7;border-radius:4px;max-width:60%;max-height:10px}@keyframes fadeIn-data-v-4f08cdf7{0%{opacity:.1}to{opacity:1}}@media only screen and (max-width:768px){#post[data-v-4f08cdf7]{font-size:14px}#post-info[data-v-4f08cdf7]{font-size:10px}#replyText[data-v-4f08cdf7]{font-size:14px}#replyInfo[data-v-4f08cdf7]{font-size:10px}#input-reply[data-v-4f08cdf7]{font-size:14px;width:50%}#replyBtn[data-v-4f08cdf7]{font-size:15px}}", ""]);
+exports.push([module.i, "#post[data-v-350969b8]{font-size:17px;font-family:Raleway;font-weight:700;background-color:#c7c7c7;border-radius:4px 4px 0 0;border-bottom:.6px solid #000;padding:6px;position:relative;animation:fadeIn-data-v-350969b8 2s forwards;transition-duration:.4s}#text-container[data-v-350969b8]{width:95%;height:auto;margin:0 auto}#post-text[data-v-350969b8]{word-wrap:break-word;padding:6%}#post-info[data-v-350969b8]{margin-top:2%;color:#575757;font-size:13px;letter-spacing:.4px;font-family:Heebo;text-align:right}#post-info span a[data-v-350969b8]{color:#575757;transition-duration:.2s}#post-info span a[data-v-350969b8]:hover{color:#383838;text-decoration:underline}.toggleReply[data-v-350969b8]{font-size:13px;color:#474747}#replies-container[data-v-350969b8]{background-color:#2e2e2e;border-radius:4px;margin:0 auto;margin-top:3%;margin-bottom:3%;max-width:65%;animation:fadeIn-data-v-350969b8 .5s forwards;transition-duration:.4s}.reply[data-v-350969b8]{border-bottom:.4px solid #fffaf0;padding:8px;animation:fadeIn-data-v-350969b8 1.3s forwards;transition-duration:.4s}#replyText[data-v-350969b8]{color:#e9e9e9;word-wrap:break-word}#replyInfo[data-v-350969b8]{color:#c7c7c7;font-size:13px;letter-spacing:.4px;font-family:Heebo;text-align:right;margin-top:2%}#replyInfo span a[data-v-350969b8]{color:#c7c7c7;transition-duration:.2s}#replyInfo span a[data-v-350969b8]:hover{color:#9c9c9c;text-decoration:underline}#addReply[data-v-350969b8]{padding:5%;font-size:17px;color:#e9e9e9}#input-reply[data-v-350969b8]{padding:4px;font-size:15px;background-color:#575757;color:#c7c7c7;border-radius:4px;max-width:60%;max-height:10px}@keyframes fadeIn-data-v-350969b8{0%{opacity:.1}to{opacity:1}}@media only screen and (max-width:768px){#post[data-v-350969b8]{font-size:14px}#post-info[data-v-350969b8]{font-size:10px}.toggleReply[data-v-350969b8]{font-size:13px}#replyText[data-v-350969b8]{font-size:14px}#replyInfo[data-v-350969b8]{font-size:10px}#input-reply[data-v-350969b8]{font-size:14px;width:50%}#replyBtn[data-v-350969b8]{font-size:15px}}", ""]);
 
 // exports
 
