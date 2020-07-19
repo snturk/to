@@ -1,7 +1,7 @@
 export var userPosts = [ ];
 
 var config = {
-  apiKey: "AIzaSyDAPg6x_ORpzkF9iReHFDrox1f1y0iKWrQ",
+  apiKey: "xxx",
   authDomain: "to-posts.firebaseapp.com",
   databaseURL: "https://to-posts.firebaseio.com",
   projectId: "to-posts",
