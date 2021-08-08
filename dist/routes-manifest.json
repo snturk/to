@@ -1,0 +1,1 @@
+{"version":3,"pages404":true,"basePath":"","redirects":[{"source":"/:path+/","destination":"/:path+","internal":true,"statusCode":308,"regex":"^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"}],"headers":[],"dynamicRoutes":[],"dataRoutes":[{"page":"/projects","dataRouteRegex":"^/_next/data/b9MOD9Uh7pzzBs3_7_WZM/projects.json$"}],"rewrites":[]}
